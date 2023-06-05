@@ -1,0 +1,52 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки</title>
+    <link rel="stylesheet" href="~/css/basics.css">
+    <link rel="stylesheet" href="~/css/list.css">
+    <link rel="stylesheet" href="~/css/menu.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="~/js/menu.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <div class="menu-burger__header">
+                    <span></span>
+                </div>
+
+                <nav class="header__nav">
+                    <ul class="menu header__menu">
+                        <li>@ViewData["Username"]</li>
+                        <li><a href="/">Выйти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="main">
+            <div class="main__container">
+                <div class="title">Заметки</div>
+                <div class="notes">
+                    @for (int i = 0;i < @ViewBag.list.Count; i++)
+                    {
+                        <div class="note">
+                            <div class="date">Создана: <span>@ViewBag.list[i].Date_month</span></div>
+                            <hr>
+                            <div class="text">
+                                @ViewBag.list[i].Text
+                            </div>
+                        </div>
+                    }
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+.popup {
+    position: absolute;
+    width: 552px;
+    height: 414px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #414141;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup__container {
+    width: 75%;
+    height: 85%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+
+    align-self: center;
+}
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+}
+
+label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 12px;
+}
+
+.popup input:not([type="submit"]) {
+    width: 260px;
+    height: 35px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.25);
+    border-color: #FFFFFF;
+
+    font-size: 18px;
+
+    outline: none;
+    padding: 0.375rem 0.75rem;
+
+}
+
+
+.popup form .error-message:first-of-type{
+    margin-bottom: 15px;
+}
+
+.popup form .error-message:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+.popup input[type="submit"] {
+    width: 137px;
+    height: 37px;
+
+    background: #2ABE53;
+    border-radius: 10px;
+    border-color: #2ABE53;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.popup input[type="submit"]:hover {
+    filter: none;
+}
+
+.error-message {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #FF3838;
+
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        height: 100vh;
+        background-color: #414141;
+    }
+    .popup {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .popup__container {
+        width: 100%;
+        padding: 10px;
+    }
+    .popup input:not([type="submit"]) {
+        width: 100%;
+        font-size: 17px;
+    }
+}

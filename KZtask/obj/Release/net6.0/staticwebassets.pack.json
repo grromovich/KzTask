@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\2-2-\\Pictures\\kztask\\KZtask\\KZtask\\wwwroot\\css\\basics.css",
+      "PackagePath": "staticwebassets\\css\\basics.css"
+    },
+    {
+      "Id": "C:\\Users\\2-2-\\Pictures\\kztask\\KZtask\\KZtask\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\2-2-\\Pictures\\kztask\\KZtask\\KZtask\\wwwroot\\css\\list.css",
+      "PackagePath": "staticwebassets\\css\\list.css"
+    },
+    {
+      "Id": "C:\\Users\\2-2-\\Pictures\\kztask\\KZtask\\KZtask\\wwwroot\\css\\menu.css",
+      "PackagePath": "staticwebassets\\css\\menu.css"
+    },
+    {
+      "Id": "C:\\Users\\2-2-\\Pictures\\kztask\\KZtask\\KZtask\\wwwroot\\js\\menu.js",
+      "PackagePath": "staticwebassets\\js\\menu.js"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.KZtask.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.KZtask.props",
+      "PackagePath": "build\\KZtask.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.KZtask.props",
+      "PackagePath": "buildMultiTargeting\\KZtask.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.KZtask.props",
+      "PackagePath": "buildTransitive\\KZtask.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
