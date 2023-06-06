@@ -18,11 +18,11 @@
                 <form method="post" asp-controller="Auth" asp-action="Check">
                     <div class="error-message">@ViewData["error"]</div>
                     <label asp-for="Id">Логин</label>
-                    <input type="text" asp-for="Id" />
+                    <input type="text" asp-for="Id"/>
                     <span asp-validation-for="Id" class="error-message login"></span>
 
                     <label asp-for="Password">Пароль</label>
-                    <input type="password" asp-for="Password" id="">
+                    <input type="password" asp-for="Password">
                     <span asp-validation-for="Password" class="error-message password"></span>
 
                     <input type="submit" value="Войти">

@@ -1,6 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using KZtask.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
+
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
 
 namespace KZtask.Controllers
 {
@@ -20,9 +26,16 @@ namespace KZtask.Controllers
                 {
                     try
                     {
-                        if(db.Authorization.First(p => p.Id == user.Id).Id == user.Id && db.Authorization.First(p => p.Id == user.Id).Password == user.Password)
+                        if(db.Users.FirstOrDefault(p => p.Id == user.Id && p.Password == user.Password) != null)
                         {
-                            return Redirect("/list/Index?id=" + user.Id);
+                            var claims = new List<Claim>
+                            {
+                                new Claim(ClaimsIdentity.DefaultNameClaimType, user.Id),
+                            };
+                            var claimsIdentity = new ClaimsIdentity(claims, "Cookies");
+                            var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+                            HttpContext.SignInAsync(claimsPrincipal);
+                            return Redirect("/list/Index");
                         }
                     }
                     catch (Exception ex)

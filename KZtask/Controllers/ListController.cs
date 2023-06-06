@@ -1,8 +1,13 @@
 ﻿using KZtask.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace KZtask.Controllers
 {
+    [Authorize()]
     public class ListController : Controller
     {
         public IActionResult Index(string id)
@@ -11,9 +16,10 @@ namespace KZtask.Controllers
             {
                 try
                 {
-                    List<Test> texts = db.Test.AsEnumerable().Where(b => (b.Id == id)).ToList();
+                    var login = HttpContext.User.FindFirst(ClaimsIdentity.DefaultNameClaimType);
+                    List<Test> texts = db.Tasks.AsNoTracking().Where(b => b.Id == login.Value).ToList();
                     ViewBag.list = texts;
-                    ViewData["Username"] = id;
+                    ViewData["Username"] = login?.Value;
                 }
                 catch (Exception ex)
                 {
