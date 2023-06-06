@@ -7,7 +7,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0LwnAR1u8EabdOVbCCDclgAAAAACAAAAAAAQZgAAAAEAACAAAAAMrGAF7ANOcaQvnmrEjZRP8m5sLHTfst7rLSDQthMC1AAAAAAOgAAAAAIAACAAAAC1gGDPWmNQdGqxZWh52xT1siMnjfExrPqPZ0DOMSGQbyAAAAB5sCcnAaZWInzxQfFUGkkNWRHyc04YYfusDbByIFg+N0AAAAC/Wtw3otoG5oLBc1Dnbm2sAM2jev0lDWjjV3sWMPtkaQg1eNH54vaBr9XMjDeFv3UwRQWWhPP5zDPIsz/12VI3</EncryptedPassword>
     <_PublishTargetUrl>ftp://Tasks.somee.com/www.Tasks.somee.com</_PublishTargetUrl>
-    <History>True|2023-06-05T16:42:10.6504472Z;False|2023-06-05T19:39:13.9376605+03:00;False|2023-06-05T19:35:49.7746498+03:00;True|2023-06-05T08:00:21.2668627+03:00;False|2023-06-05T07:56:52.8274701+03:00;False|2023-06-05T07:55:12.1386941+03:00;True|2023-06-05T07:49:06.5815255+03:00;True|2023-06-05T03:41:28.1983586+03:00;True|2023-06-05T01:36:27.7074887+03:00;</History>
+    <History>True|2023-06-06T05:21:24.9714410Z;True|2023-06-06T08:17:08.4140284+03:00;True|2023-06-05T19:42:10.6504472+03:00;False|2023-06-05T19:39:13.9376605+03:00;False|2023-06-05T19:35:49.7746498+03:00;True|2023-06-05T08:00:21.2668627+03:00;False|2023-06-05T07:56:52.8274701+03:00;False|2023-06-05T07:55:12.1386941+03:00;True|2023-06-05T07:49:06.5815255+03:00;True|2023-06-05T03:41:28.1983586+03:00;True|2023-06-05T01:36:27.7074887+03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -24,19 +24,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/05/2022 23:26:00</publishTime>
     </File>
     <File Include="KZtask.deps.json">
-      <publishTime>06/05/2023 19:40:27</publishTime>
+      <publishTime>06/06/2023 08:19:45</publishTime>
     </File>
     <File Include="KZtask.dll">
-      <publishTime>06/05/2023 19:40:26</publishTime>
+      <publishTime>06/06/2023 08:19:41</publishTime>
     </File>
     <File Include="KZtask.exe">
-      <publishTime>06/05/2023 19:40:26</publishTime>
+      <publishTime>06/06/2023 08:19:41</publishTime>
     </File>
     <File Include="KZtask.pdb">
-      <publishTime>06/05/2023 19:40:26</publishTime>
+      <publishTime>06/06/2023 08:19:41</publishTime>
     </File>
     <File Include="KZtask.runtimeconfig.json">
-      <publishTime>06/05/2023 05:05:49</publishTime>
+      <publishTime>06/06/2023 08:17:30</publishTime>
     </File>
     <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
       <publishTime>04/15/2020 01:39:12</publishTime>
@@ -174,7 +174,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/19/2020 21:53:38</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>06/05/2023 19:40:29</publishTime>
+      <publishTime>06/06/2023 08:19:45</publishTime>
     </File>
     <File Include="wwwroot/css/basics.css">
       <publishTime>06/04/2023 23:45:07</publishTime>
